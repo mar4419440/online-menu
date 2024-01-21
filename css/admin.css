@@ -1,0 +1,94 @@
+body {
+    background-color: #545151;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container input,
+.container select {
+    width: 30%;
+    background-color: #433c3c;
+    color: #fff;
+}
+
+.container form select {
+    width: 32.3%;
+}
+
+.container label,
+.container input,
+.container select {
+    padding: 15px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.container input[type="file"] {
+    background-color: #eee;
+    margin: 15px 0px 0px 15px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.table table {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+}
+
+.table table td {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+}
+
+.table table tr th {
+    color: #eee;
+    font-size: 1.7rem;
+}
+
+.table table .edite {
+    background-color: #da9a24;
+}
+
+.table table .delete {
+    background-color: red;
+}
+
+.table table .edite,
+.table table .delete {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+input.submit {
+    width: 70%;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .table table {
+        max-width: 413px;
+        margin-left: 0%;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .table table tr th {
+        color: #eee;
+        font-size: 1.2rem;
+        width: auto;
+    }
+    .table table tr td {
+        flex-flow: wrap row;
+    }
+}
